@@ -32,7 +32,7 @@
 
 <div align="center">
   <h4 align="center">Leia nos idiomas</h4>
-  <a href="https://github.com/gbdsantos/react-native-rocketseat-next-level-week-3-happy/blob/master/README.md">🇺🇸
+  <a href="https://github.com/gbdsantos/react-native-rocketseat-next-level-week-3-happy">🇺🇸
   </a>
 </div>
 
