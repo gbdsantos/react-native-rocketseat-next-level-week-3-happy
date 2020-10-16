@@ -1,15 +1,37 @@
 import React from 'react';
-
 import { StyleSheet, Text, View } from 'react-native';
+
+import { BorderlessButton } from 'react-native-gesture-handler';
+import { Feather } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 interface HeaderProps {
   title: string;
+  showCancel: boolean;
 }
 
-export default function Header({ title }: HeaderProps) {
+export default function Header({ showCancel = true, title }: HeaderProps) {
+  const { navigate } = useNavigation();
+
+  function handleGoBackToAppHomepage() {
+    navigate('OrphanagesMap');
+  }
+
   return (
     <View style={styles.container}>
+      <BorderlessButton onPress={navigate.goBack}>
+        <Feather color="#15b6d6" name="arrow-left" size={24} />
+      </BorderlessButton>
+
       <Text style={styles.title}>{title}</Text>
+
+      {showCancel ? (
+        <BorderlessButton onPress={handleGoBackToAppHomepage}>
+          <Feather color="#ff669d" name="x" size={24} />
+        </BorderlessButton>
+      ) : (
+        <View />
+      )}
     </View>
   );
 }
