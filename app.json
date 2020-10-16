@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "react-native-rocketseat-next-level-week-3-happy",
-    "slug": "react-native-rocketseat-next-level-week-3-happy",
+    "name": "Happy",
+    "slug": "br.gbsantos.happy",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#29B6D1"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -16,8 +16,14 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "android": {
+      "package": "br.gbsantos.happy",
+      "versionCode": 1
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "br.gbsantos.happy",
+      "buildNumber": "1.0.0"
     },
     "web": {
       "favicon": "./assets/favicon.png"
